@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project 2</title>
+	<meta charset="utf-8">
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet" />
+	<link rel="stylesheet" href="../css/lib/fontello.css" />
+	<link rel="stylesheet" href="../css/lib/normalize.css" />
+	<link rel="stylesheet" href="../css/index.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+	<div class="background-image"></div>
+	<div class="content" >		
+			<div class="main-content-header overlay">
+				
+
+				<h1 class="headline"><span class="headline-main">Project 2</span></h1>
+				<p class="version">Lorem Ipsum</p>
+				
+				
+			</div>
+		</div>
+
+		<div class="menu">
+			<a href="../index.html"><h1 class="headline" style="float: left; font-size: 50px;padding-top: 0px; padding-left: 10px;"><span class="headline-main">R</span>T</h1></a>
+	        <ul>
+	        <li>
+	          <a href="../index.html#latestwork" data-scroll="latestwork"><b>Our Latest Work</b></a>
+	        </li>
+	        <li>
+	          <a href="../index.html#services" data-scroll="services"><b>Services</b></a>
+	        </li>
+	        <li>
+	          <a href="../index.html#work" data-scroll="work"><b>Work With Us</b></a>
+	        </li>
+	        <li>
+	          <a href="../careers/careers.html" data-scroll="careers"><b>Careers</b></a>
+	        </li>
+	      </ul>
+		</div>
+
+		<script type="text/javascript">
+			$('a').on('click', function () {
+	   			var scrollAnchor = $(this).attr('data-scroll');
+	   			console.log(scrollAnchor);
+	      		 scrollPoint = $('div[data-anchor="' + scrollAnchor + '"]').offset().top - 60;
+	   			console.log(scrollPoint);
+
+	   			$('body,html').animate({
+	      			scrollTop: scrollPoint
+	   			},600);
+	   		return false;
+			})
+		</script>
+		
+	
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alliances</title>
+	<meta charset="utf-8">
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet" />
+	<link rel="stylesheet" href="../css/lib/fontello.css" />
+	<link rel="stylesheet" href="../css/lib/normalize.css" />
+	<link rel="stylesheet" href="../css/index.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+	<div class="background-image"></div>
+	<div class="content" style="margin: 0px 70px 40px;">		
+			<div class="main-content-header overlay">
+				
+
+				<h1 class="headline"><span class="headline-main">Approach</span></h1>
+				<p class="version">Owners today are bombarded with no shortage of brokers, every broker passing on street is trying to get a joint venture for their builders. Our relationship with 150 curated builders lets you have multiple options to choose a builder and get into a joint venture depending upon their requirements.
+
+Our seamless integration and relationships with builders ensures that we not only get the best deal for you but it’s backed by absolutely, positively no time waste.  
+</p>
+				
+				
+			</div>
+		</div>
+
+		<div class="menu">
+			<a href="../index.html"><h1 class="headline" style="float: left; font-size: 50px;padding-top: 0px; padding-left: 10px;"><span class="headline-main">R</span>T</h1></a>
+	        <ul>
+	        <li>
+	          <a href="../index.html#latestwork" data-scroll="latestwork"><b>Our Latest Work</b></a>
+	        </li>
+	        <li>
+	          <a href="../index.html#services" data-scroll="services"><b>Services</b></a>
+	        </li>
+	        <li>
+	          <a href="../index.html#work" data-scroll="work"><b>Work With Us</b></a>
+	        </li>
+	        <li>
+	          <a href="../careers/careers.html" data-scroll="careers"><b>Careers</b></a>
+	        </li>
+	      </ul>
+		</div>
+
+		<script type="text/javascript">
+			$('a').on('click', function () {
+	   			var scrollAnchor = $(this).attr('data-scroll');
+	   			console.log(scrollAnchor);
+	      		 scrollPoint = $('../index.html#div[data-anchor="' + scrollAnchor + '"]').offset().top - 60;
+	   			console.log(scrollPoint);
+
+	   			$('body,html').animate({
+	      			scrollTop: scrollPoint
+	   			},600);
+	   		return false;
+			})
+		</script>
+		
+	
+</body>
+</html>

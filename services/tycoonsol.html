@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TycoonSolutions</title>
+	<meta charset="utf-8">
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet" />
+	<link rel="stylesheet" href="../css/lib/fontello.css" />
+	<link rel="stylesheet" href="../css/lib/normalize.css" />
+	<link rel="stylesheet" href="../css/index.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+	<div class="background-image"></div>
+	<div class="content" style="text-align: left;" >		
+			<div class="main-content-header overlay">
+				
+
+				<h1 class="headline"><span class="headline-main">Approach</span></h1>
+				<p class="version">TycoonSolutions extends RealTycoon’s full-service rental/sale capabilities in commercial Real Estate sector. We are a guide through the world of emerging spaces that are capable of integrating technology, culture with the commercial space eventually leading to enhancing the work potential and business opportunities for our clients.We are focused on empowering our clients to have full knowledge about developing working spaces in their domain and expand their business opportunities.</p>
+				<h1 class="headline"><span class="headline-main">Integrity with clients</span></h1>
+				<p class="version">From the moment the client signs up the service, real tycoon will be taking care of their every requirement of commercial space and keep them updated about about commercial spaces putting their requirements in centre and keep ourselves updated constantly with what they need in their offices and retail spaces.</p>
+				
+				
+			</div>
+			
+		</div>
+
+		<div class="menu">
+			<a href="../index.html"><h1 class="headline" style="float: left; font-size: 50px;padding-top: 0px; padding-left: 10px;"><span class="headline-main">R</span>T</h1></a>
+	        <ul>
+	        <li>
+	          <a href="../index.html#latestwork" data-scroll="latestwork"><b>Our Latest Work</b></a>
+	        </li>
+	        <li>
+	          <a href="../index.html#services" data-scroll="services"><b>Services</b></a>
+	        </li>
+	        <li>
+	          <a href="../index.html#work" data-scroll="work"><b>Work With Us</b></a>
+	        </li>
+	        <li>
+	          <a href="../careers/careers.html" data-scroll="careers"><b>Careers</b></a>
+	        </li>
+	      </ul>
+		</div>
+
+		<script type="text/javascript">
+			$('a').on('click', function () {
+	   			var scrollAnchor = $(this).attr('data-scroll');
+	   			console.log(scrollAnchor);
+	      		 scrollPoint = $('div[data-anchor="' + scrollAnchor + '"]').offset().top - 60;
+	   			console.log(scrollPoint);
+
+	   			$('body,html').animate({
+	      			scrollTop: scrollPoint
+	   			},600);
+	   		return false;
+			})
+		</script>
+		
+	
+</body>
+</html>

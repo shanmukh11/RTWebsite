@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Careers</title>
+	<meta charset="utf-8">
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet" />
+	<link rel="stylesheet" href="../css/lib/fontello.css" />
+	<link rel="stylesheet" href="../css/lib/normalize.css" />
+	<link rel="stylesheet" href="../css/index.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body style="background-color: transparent;">
+	<div class="background-image"></div>
+		<div class="main-content">
+			<div class="careers-content">
+					<h1><b>Careers</b></h1>
+					<ul>
+						<li>
+							<h3><b>Business Development</b></h3>
+							<p>Roles are focused on strategizing and execution of everything that will be able to push the number of sales and client acquisition.<br></p><a href="" style="text-decoration:none" class="button btn3">Apply>></a>
+						</li><br><br>
+						<li>
+							<h3><b>Creative Content Engineering</b></h3>
+							<p>For those looking for exposure and trying to build their brands in creative fields like film production, photography, video/photo editing and music.<br></p><a href="" style="text-decoration:none" class="button btn3">Apply>></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		<div class="menu">
+			<a href="../index.html"><h1 class="headline" style="float: left; font-size: 50px;padding-top: 0px; padding-left: 10px;"><span class="headline-main">R</span>T</h1></a>	
+	        <ul>
+	        <li>
+	          <a href="../index.html#latestwork" data-scroll="latestwork"><b>Our Latest Work</b></a>
+	        </li>
+	        <li>
+	          <a href="../index.html#services" data-scroll="services"><b>Services</b></a>
+	        </li>
+	        <li>
+	          <a href="../index.html#work" data-scroll="work"><b>Work With Us</b></a>
+	        </li>
+	        <li>
+	          <a href="careers.html" data-scroll="careers"><b>Careers</b></a>
+	        </li>
+	      </ul>
+		</div>
+
+		<script type="text/javascript">
+			$('a').on('click', function () {
+	   			var scrollAnchor = $(this).attr('data-scroll');
+	   			console.log(scrollAnchor);
+	      		 scrollPoint = $('div[data-anchor="' + scrollAnchor + '"]').offset().top - 60;
+	   			console.log(scrollPoint);
+
+	   			$('body,html').animate({
+	      			scrollTop: scrollPoint
+	   			},600);
+	   		return false;
+			})
+		</script>
+		
+	
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Biz-In-Design</title>
+	<meta charset="utf-8">
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet" />
+	<link rel="stylesheet" href="../css/lib/fontello.css" />
+	<link rel="stylesheet" href="../css/lib/normalize.css" />
+	<link rel="stylesheet" href="../css/index.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+	<div class="background-image"></div>
+	<div class="content" >		
+			<div class="main-content-header overlay">
+				
+
+				<h1 class="headline"><span class="headline-main">Approach</span></h1>
+				<p class="version">We create, invest and execute interior design at scale for emerging and established businesses and brands in collaboration with premium design companies involved in interior decors.
+
+This service is laser focused on improving working environment, reflect company culture within the working environment by producing specially designed client specific interior designs and also support clients to lower the requirement of huge capital while setting up a new outlet/office by investing in the interiors of the property. 
+
+This service boosts expansion of our clients by lowering the capital intensiveness in opening a new office/outlet, the amount of capital required is reduced and will be saving them tons of time as they need not wait for huge capital to go for that one more space.</p>
+		</div>
+
+		<div class="menu">
+			<a href="../index.html"><h1 class="headline" style="float: left; font-size: 50px;padding-top: 0px; padding-left: 10px;"><span class="headline-main">R</span>T</h1></a>
+	        <ul>
+	        <li>
+	          <a href="../index.html#latestwork" data-scroll="latestwork"><b>Our Latest Work</b></a>
+	        </li>
+	        <li>
+	          <a href="../index.html#services" data-scroll="services"><b>Services</b></a>
+	        </li>
+	        <li>
+	          <a href="../index.html#work" data-scroll="work"><b>Work With Us</b></a>
+	        </li>
+	        <li>
+	          <a href="../careers/careers.html" data-scroll="careers"><b>Careers</b></a>
+	        </li>
+	      </ul>
+		</div>
+
+		<script type="text/javascript">
+			$('a').on('click', function () {
+	   			var scrollAnchor = $(this).attr('data-scroll');
+	   			console.log(scrollAnchor);
+	      		 scrollPoint = $('div[data-anchor="' + scrollAnchor + '"]').offset().top - 60;
+	   			console.log(scrollPoint);
+
+	   			$('body,html').animate({
+	      			scrollTop: scrollPoint
+	   			},600);
+	   		return false;
+			})
+		</script>
+		
+	
+</body>
+</html>
