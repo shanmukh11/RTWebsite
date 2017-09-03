@@ -9,32 +9,35 @@
 		<link rel="stylesheet" href="css/index.css" />
 	
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="js/jquery.bxslider.js"></script>
+  		<link href="js/jquery.bxslider.css" rel="stylesheet" />
 	</head>
 	<body>
 
 		<div class="content">		
-			<video loop="" autoplay="" class="fullscreen-bg" >
+			<!--video loop="" autoplay="" class="fullscreen-bg"  style="filter: brightness(50%);">
 				<source src="src/vid3.mp4" type="video/mp4"></source>
-			</video>
+			</video-->
+			<img src="src/city2.jpeg" style="filter: blur(1px);">
 			<div class="main-content-header overlay">
 				
 
-				<h1 class="headline"><span class="headline-main">Real</span>Tycoon</h1>
-				<p class="version">We are a full-service B2B real estate focused agency for the “now”. </p>
-				<p>We partner with clients to drive their business outcomes with <br>best-in-class property acquisition, interior design and social media focused digital marketing.</p>
+				<h1 class="headline" ><span class="headline-main" style="color: black;">REAL<span style="font-weight: lighter;">TYCOON</span></span></h1>
+				<p class="version">BUY. SELL. INVEST. LEASE. INTERIOR DESIGN. FRANCHISE.</p>
+				<p style="font-weight: bold;">We partner with clients to drive their business outcomes with <br>best-in-class property acquisition, leasing, interior design and social media focused digital marketing.</p>
 				<div>
-					<br><a href="#" data-scroll="work" class="border111">Work With Us</a>
+					<br><br><br><br><a href="#" data-scroll="work" class="border111">Work With Us</a>
 				</div>
 				
 			</div>
 		</div>
 		<div>
 
-			<div class="menu">
-			<a href="index.html"><h1 class="headline" style="float: left; font-size: 50px;padding-top: 0px; padding-left: 10px;"><span class="headline-main">R</span>T</h1></a>
-				<ul>
+			<div class="menu" >
+			<a href="index.html" style="font-family: logofont;" id="logo"><h1 class="headline" style="float: left; font-size: 50px; padding-top: 0px; padding-left: 10px;"><span class="headline-main" style="font-weight: bold; color: white;">RT</span></h1></a>
+				<ul style="color: #000;">
 		        <li>
-		          <a href="#" data-scroll="latestwork"><b>Our Latest Work</b></a>
+		          <a href="#" data-scroll="rtrewards"><b>RT Rewards</b></a>
 		        </li>
 		        <li>
 		          <a href="#" data-scroll="services"><b>Services</b></a>
@@ -42,54 +45,74 @@
 		        <li>
 		          <a href="careers/careers.html" data-scroll="careers"><b>Careers</b></a>
 		        </li>
+		        <li>
+	        	  <a href="#" data-scroll="work"><b>Work With Us</b></a>
+	        	</li>
 		      </ul>
 			</div>
 		</div>
 
+		<div id="rtrewards" data-anchor="rtrewards">
+						 		 <div style="text-align: center; font-family: logofont; font-size: 90px; color: white; background-color: #545155;">REAL TYCOON REWARDS</div>
 
-		<div class="main-content" >
-
-	
-		    
-			<div class="main-content-body" >
-				<div class="main-content-body-inner" id="latestwork" data-anchor="latestwork">
-					<h2>Our Latest Work</h2>
+		<ul class="bxslider">
+ 		 <li><img src="src/rupeenote.jpeg" style="filter: brightness(50%); overflow: hidden; padding-left: 55px; height: 587px; width: 1400px;" />
+ 		 		<div class="main-content-body rtrewards">
+				<div class="main-content-body-inner" style="padding-top: 30px; color: white; font-weight: bolder; font-size: 23px;" >
+					
 					<ul>
 						<li>
-							<h3>Project 1</h3>
-							<p>Details about it with pics<br><a href="latestwork/project1.html" style="text-decoration:none" class="button btn3">How it happened?</a></p>
-						</li>
-						<li>
-							<h3>Project 2</h3>
-							<p>Details about it with pics<br><a href="latestwork/project2.html" style="text-decoration:none" class="button btn3">How it happened?</a></p>
+							<h3 style="font-family: logofont;">Looking for a swanky IT office in Chennai?</h3>
+							<p>Incentivize yourself by letting us know your Company's/Friend's office space requirements<br><br><a href="rtrewards/rtrewards.html" style="text-decoration:none" class="button btn3">Learn More >></a></p>
 						</li>
 					</ul>
 				</div>
 			</div>
-			<div class="main-content-body" >
-				<div class="main-content-body-inner" id="services" data-anchor="services">
-					<h2>Our Services:</h2>
-					<ul>
-						<li>
-							<h4>Alliance:</h4>
-							<p> Over 150 builders, contractors and experts with one common goal: blowing business objectives out of your property through joint venture.<br><a href="services/alliances.html" style="text-decoration:none" class="button btn2">Learn More>></a></p>
-						</li>
-						<li>
-							<h4>TycoonSolutions:</h4>
-							<p>We provide property consulting, helping clients(builders, Investors and businesses) to identify and choose properties according to their requirements, to win in 2017 and beyond.<br><a href="services/tycoonsol.html" style="text-decoration:none" class="button btn2">Learn More>></a></p>
-						</li>
-						<li>
-							<h4>Biz-In-Design:</h4>
-							<p>Developing the most effective interior design solutions in terms of design, budget and execution for your commercial space.<br><a href="services/bizindesign.html" style="text-decoration:none" class="button btn2">Learn More>></a></p>
-						</li>
-					</ul>
+ 		 </li>
+		</ul>
+		</div>
+
+		<div id="services" data-anchor="services">
+			 		 <div style="text-align: center; font-family: logofont; font-size: 90px;padding-top: 10px; color: white; background-color: #545155;">SERVICES</div>
+
+		<ul class="bxslider">
+
+ 		 <li> 		 		
+<img src="src/cons.jpeg"  style="filter: brightness(75%);padding-left:50px;padding-right:  50px;width: 1419px; height: 587px;"/>
+
+ 		 		<div class="main-content-body rtrewards">
+
+				<div class="main-content-body-inner" style="padding-top: 40px; color: white; font-weight: bolder; font-size: 23px;" >
+					<h2>Alliance:</h2>
+							<p> Over 150 builders, contractors and experts with one common goal: blowing business objectives out of your property through joint venture.<br><br><a href="services/alliances.html" style="text-decoration:none" class="button btn2">Learn More >></a></p>
 				</div>
 			</div>
+ 		 </li>
+ 		 <li>
+ 		 	<img src="src/laptop.jpeg"  style="filter: brightness(75%);padding-left:50px;padding-right:  50px;width: 1419px; height: 587px;"/>
+ 		 		<div class="main-content-body rtrewards">
+				<div class="main-content-body-inner" style="padding-top: 40px; color: white; font-weight: bolder; font-size: 23px;" >
+					<h2>Tycoon Solutions:</h2>
+							<p>No one understands "Namma" Chennai's IT Real Estate bettter than us.<br><br><a href="services/tycoonsol.html" style="text-decoration:none" class="button btn2">Learn More >></a></p>
+				</div>
+			</div>
+ 		 </li>
+ 		 <li>
+ 		 	<img src="src/ivyleaves.jpeg"  style="filter: brightness(75%);padding-left:50px;padding-right:  50px;width: 1419px; height: 587px;"/>
+ 		 		<div class="main-content-body rtrewards">
+				<div class="main-content-body-inner" style="padding-top: 40px; color: white; font-weight: bolder; font-size: 23px;" >
+					<h2>Biz-In-Design:</h2>
+							<p>Developing the most effective interior design solutions in terms of design, budget and execution for your commercial space.<br><br><a href="services/bizindesign.html" style="text-decoration:none" class="button btn2">Learn More >></a></p>
+				</div>
+			</div>
+ 		 </li>
+		</ul>
+		
 
-			<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+			<!--link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
 			
-		    <div class="main-content2" id="work" data-anchor="work">
+		    <div class="main-content2">
 
 		        <form class="form-validation" method="post" action="#">
 
@@ -103,8 +126,9 @@
 		                    <span>What do you want to talk about?</span>
 		                    <select name="topic">
 		                        <option>Choose an option</option>
-		                        <option>Business Enquiry</option>
-		                        <option>Partnership</option>
+		                        <option>RT Rewards</option>
+		                        <option>Tycoon Solutions</option>
+		                        <option>Biz-In-Enquiry</option>
 		                        <option>General Enquiry</option>
 		                        <option>Press Enquiry</option>
 		                    </select>
@@ -112,14 +136,14 @@
 
 		            </div>
 
-		            <div class="form-row form-input-name-row required">
+		            <div class="form-row form-input-name-row required" style="padding-left: 78px;">
 
 		                <label>
 		                    <span>Name</span>
 		                    <input type="text" name="name" required>
 		                </label>
 
-		            </div>
+		            </div><br><br><br>
 
 		            <div class="form-row form-input-name-row required">
 
@@ -137,7 +161,7 @@
 		                    <input type="text" name="title" required>
 		                </label>
 
-		            </div>
+		            </div><br><br>
 
 		            <div class="form-row form-input-name-row required">
 
@@ -147,6 +171,15 @@
 		                </label>
 
 		            </div>
+
+		            <div class="form-row form-input-email-row required">
+
+		                <label>
+		                    <span>Phone</span>
+		                    <input type="number" name="phone" placeholder="Enter a Valid Phone Number" required >
+		                </label>
+
+		            </div><br><br>
 
 		            <div class="form-row form-input-email-row required">
 
@@ -175,39 +208,7 @@
 
 		            </div>
 
-		            <div class="form-row" id="check">
-
-		            	<span class="checkhead">How would you like to engage RealTycoon? (Check Relevant)</span>
-
-		            	<label class="form-checkbox">
-		                	<ul>
-		                		<li><input type="checkbox" name="checkbox">  Property Rental/sales</li>
-		                		<li><input type="checkbox" name="checkbox">  Interior Design</li>
-		                		<li><input type="checkbox" name="checkbox">  Franchising</li>
-		                		<li><input type="checkbox" name="checkbox">  Other</li>
-		                	</ul>
-		                    
-		                </label>
-
-	            	</div>
-
-
-		            <div class="form-row" id="check">
-
-		                <span class="checkhead">Which Services are you looking to engage?</span>
-
-		            	<label class="form-checkbox">
-		                	<ul>
-		                		<li><input type="checkbox" name="aliiance">  Alliance</li>
-		                		<li><input type="checkbox" name="tycsol">  TycoonSolutions</li>
-		                		<li><input type="checkbox" name="bid">  Biz-In-Design</li>
-		                	</ul>
-		                    
-		                </label>
-
-	            	</div>
-
-	            	<div class="form-row form-input-name-row">
+		            <div class="form-row form-input-name-row" style="padding-left: 10px;">
 
 		                <label>
 		                    <span>What are you looking to achieve?</span>
@@ -216,7 +217,7 @@
 
 		            </div>
 
-		            <div class="form-row form-input-name-row">
+		            <div class="form-row form-input-name-row" style="padding-left: 250px;">
 
 		                <label>
 		                    <span>Did we miss anthing/Anyhting else you would like to add?</span>
@@ -225,7 +226,7 @@
 
 		            </div>
 
-		            <div class="form-row">
+		            <div class="form-row" style="padding-left: 270px;">
 
 		                <button type="submit">Submit</button>
 
@@ -235,24 +236,29 @@
 
 			</div>
 
-		</div>
+		</div-->
+
+		<div class="custom" id="work" data-anchor="work">
+	<iframe width="100%" height="825" frameborder="0" src="form.html"></iframe>
+	</div>
+
+  
 
 		<div class="footer">
-			<d style="float: left;">© RealTycoon 2017</d>
-			
-			<span style=" color: #00ff45;"><b>Email Us: <b></span>
-			<a href="mailto:vamsi.bhogi@gmail.com" style="font-size: 20px;"><b>vamsi.bhogi@gmail.com</b></a>
+			<d style="float: left; color: white;">© RealTycoon 2017</d>
+			<span style="padding-left: 110px;">Contact - 9176480434 / 9884468597</span>
+			<a href="mailto:vamsi.bhogi@gmail.com" style="font-size: 20px; float: right"><b>Email Us: alliance@realtycoon.in</b></a>
 		</div>
 		
 		<div style="background-color: #2b6376; padding-top: 5px; text-align: center;">
-			<a href="" style="padding-right: 10px;"><img src="src/Facebook.png" height="46" width="46"></a><a href=""><img src="src/YouTube.png" height="46" width="46"></a>
+			<a href="https://www.facebook.com/RealTycoon/?ref=bookmarks" target="_blank" style="padding-right: 10px;"><img src="src/Facebook.png" height="46" width="46"></a><a href="https://www.youtube.com/channel/UC38tSvlz-I6-a8ZN-XpFTeg"  target="_blank"><img src="src/YouTube.png" height="46" width="46"></a>
 		</div>
 
 		<script type="text/javascript">
 			$('a').on('click', function () {
 	   			var scrollAnchor = $(this).attr('data-scroll');
 	   			console.log(scrollAnchor);
-	      		 scrollPoint = $('div[data-anchor="' + scrollAnchor + '"]').offset().top - 60;
+	      		 scrollPoint = $('div[data-anchor="' + scrollAnchor + '"]').offset().top - 54;
 	   			console.log(scrollPoint);
 
 	   			$('body,html').animate({
@@ -294,7 +300,12 @@
 		</script>
 
 	
-		
+		<script type="">
+			$(document).ready(function(){
+	   	  $('.bxslider').bxSlider();
+	   	  console.log(1);
+			});
+		</script>
 		<!--<script>
 			$('#jsi-nav').sidebar({
 				trigger: '.jsc-sidebar-trigger',
